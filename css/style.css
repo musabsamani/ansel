@@ -1036,6 +1036,9 @@ img {
     width: 150px;
     height: 253px;
   }
+  .home .container .img img {
+    width: 120px;
+  }
   .about .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

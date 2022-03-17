@@ -8,7 +8,7 @@
       left: 0rem;
     }
     .scroll {
-      right: -1rem;
+      right: 0rem;
     }
     .buttons {
       flex-direction: column;
@@ -16,10 +16,14 @@
     .img {
       width: 150px;
       height: 253px;
+      img {
+        // width: 120px;
+      }
     }
   }
   .about {
     .container {
+      grid-template-columns: 1fr;
       .data .info {
         grid-template-columns: repeat(1, 1fr);
         h3 {
@@ -238,71 +242,71 @@
       }
     }
   }
-}
-.about {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 4rem;
-    img {
-      width: 350px;
-    }
-    .data {
-      text-align: left;
-      .box {
-        text-align: center;
+  .about {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 4rem;
+      img {
+        width: 350px;
       }
-      p {
-        padding: 0 4rem 0 0;
-        margin-bottom: 2.5em;
+      .data {
+        text-align: left;
+        .box {
+          text-align: center;
+        }
+        p {
+          padding: 0 4rem 0 0;
+          margin-bottom: 2.5em;
+        }
       }
     }
   }
-}
-.skills .container {
-  grid-template-columns: repeat(2, 350px);
-  column-gap: 2rem;
-  .content {
-    width: fit-content;
-    padding: 2rem;
-  }
-}
-.services .container {
-  grid-template-columns: repeat(3, 192px);
-  column-gap: 3rem;
-  .card {
-    padding: 5rem 2rem 1.5rem;
-  }
-}
-.portfolio .container {
-  gap: 3rem;
-  .card {
-    padding: 1.25rem;
-    img {
-      margin-bottom: 1rem;
-    }
-    h3 {
-      margin-bottom: 0.5rem;
+  .skills .container {
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 2rem;
+    .content {
+      width: fit-content;
+      padding: 2rem;
     }
   }
-}
-.testimonials {
-  .container {
-    &.swiper.swiper-initialized.swiper-horizontal {
-      width: 750px;
-    }
+  .services .container {
+    grid-template-columns: repeat(3, 192px);
+    column-gap: 3rem;
     .card {
-      padding: 1.5rem 2rem;
+      padding: 5rem 2rem 1.5rem;
     }
   }
-}
-.contact .container {
-  column-gap: 6rem;
-}
-.footer {
-  ul:last-of-type a {
-    font-size: 1.25rem;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
+  .portfolio .container {
+    gap: 3rem;
+    .card {
+      padding: 1.25rem;
+      img {
+        margin-bottom: 1rem;
+      }
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .testimonials {
+    .container {
+      &.swiper.swiper-initialized.swiper-horizontal {
+        width: 750px;
+      }
+      .card {
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
+  .contact .container {
+    column-gap: 6rem;
+  }
+  .footer {
+    ul:last-of-type a {
+      font-size: 1.25rem;
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+    }
   }
 }

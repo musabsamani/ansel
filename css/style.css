@@ -216,6 +216,16 @@ img {
   color: var(--first-color-alt);
 }
 
+.header .top i {
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header .top i:hover {
+  color: var(--first-color);
+}
+
 .header .nav .menu {
   -webkit-transition: 0.4s;
   transition: 0.4s;

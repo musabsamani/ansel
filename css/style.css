@@ -1021,9 +1021,11 @@ img {
   }
   .home .container .social {
     left: 0rem;
+    display: none;
   }
   .home .container .scroll {
     right: 0rem;
+    display: none;
   }
   .home .container .buttons {
     -webkit-box-orient: vertical;
@@ -1032,11 +1034,11 @@ img {
             flex-direction: column;
   }
   .home .container .img {
-    width: 150px;
-    height: 253px;
+    width: 250px;
+    height: 400px;
   }
   .home .container .img img {
-    width: 120px;
+    width: 200px;
   }
   .about .container {
     -ms-grid-columns: 1fr;
@@ -1089,6 +1091,16 @@ img {
   .footer .container span span {
     display: block;
     margin-bottom: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .home .container .img {
+    width: 150px;
+    height: 253px;
+  }
+  .home .container .img img {
+    width: 120px;
   }
 }
 
